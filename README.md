@@ -1,4 +1,4 @@
-# Three-step benchmarking scRNA peak-based Epigenomic Data integration methods
+# Three-step benchmarking scRNA and Epigenomic Data integration methods
 ___________________________________________________________________________________________________________________________________________________________________________
 ## Overview
 ### Benchmarking is done in 3 steps
