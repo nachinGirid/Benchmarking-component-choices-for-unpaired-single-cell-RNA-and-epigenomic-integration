@@ -94,3 +94,4 @@ ________________________________________________________________________________
    - [Evaluation functions](https://github.com/nachinGirid/Constructing-Unpaired-Single-Cell-Gene-Expression-and-Peak-Based-Epigenomic-Data-Integration-Pipelin/tree/main/Evaluation/Functions)
 ___________________________________________________________________________________________________________________________________________________________________________
 
+[![DOI](https://zenodo.org/badge/551078278.svg)](https://doi.org/10.5281/zenodo.19138802)
