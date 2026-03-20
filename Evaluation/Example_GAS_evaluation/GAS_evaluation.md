@@ -63,4 +63,3 @@ colnames(ASW_GAS)<-c("Signac","liger","cicero","scRNA")
 ```
 The resulting table's rows are cell type, columns are cell type average silhouette index for method.
 
-```
