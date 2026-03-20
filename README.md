@@ -2,14 +2,14 @@
 ___________________________________________________________________________________________________________________________________________________________________________
 ## Overview
 ### Benchmarking is done in 3 steps
-- Gene activity score method 
-- Dimension reduction method
+- Gene activity score methods 
+- Dimension reduction methods
 - Clustering and labeling methods
 ### At each stage, conduct all possible combinations from different steps and evaluate the results using evaluation matrices(Methods).
 ___________________________________________________________________________________________________________________________________________________________________________
 ## 1. Gene activity score
 #### Methods for Gene Activity Score (GAS)
-We have benchmarked 4 gene activity calculating methods each representing different approaches to predicting gene activity from scATAC-seq data. We have followed the online tutorial for each of the methods :
+We have benchmarked 4 gene activity methods, each representing different approaches to predicting gene activity from scATAC-seq data. We have followed the online tutorial for each of the methods :
 1.  Signac(1.10.0), [Tutorial](https://satijalab.org/seurat/articles/seurat5_atacseq_integration_vignette)
 2.  LIGER (v2.1.0), [Tutorial](https://welch-lab.github.io/liger/articles/Integrating_scRNA_and_scATAC_data.html)  
 3.  Cicero(1.3.9) ,  [Tutorial](https://cole-trapnell-lab.github.io/cicero-release/docs_m3/#cicero-gene-activity-scores)
@@ -35,13 +35,13 @@ We benchmarked multiple dimension-reduction methods that embed scRNA-seq and scA
 10. **SIMBA (v1.2)** — [Tutorial](https://simba-bio.readthedocs.io/en/latest/multiome_10xpmbc10k_integration.html)  
   
 #### Evaluation metrics for common embeddings  
-1. **Percentage of same cell's different profiles are mutually in the top 1% nearest neighbors fro each other(MNN%)**.  
+1. **Percentage of same cell's different profiles are mutually in the top 1% nearest neighbors for each other(MNN%)**.  
 2. **Contrastive similarity** of a cell to its paired cell against the mean similarity to all unpaired cells.  
 3. **Cell-type Average Silhouette width (ASW)** of each cell type in RNA and ATAC embedding. 
 ___________________________________________________________________________________________________________________________________________________________________________
 ## 3.Clustering and labeling 
 #### Methods for Clustering and Labeling  
-We benchmarked multiple strategies for clustering and transfer label:
+We benchmarked multiple strategies for clustering or transferring labels:
 
 1. **Seurat anchor-based label transfer** — using `FindTransferAnchors` and `TransferData` with default parameters  
 2. **FigR anchor-based label transfer** — [Tutorial](https://buenrostrolab.github.io/FigR/articles/FigR_stim.html)  
@@ -60,7 +60,7 @@ ________________________________________________________________________________
 
 This section provides example scripts to demonstrate:
 - Running each method (GAS → dimension reduction → clustering/labeling)
-- Evaluating outputs : GAS| Joint embeddings | RNA, and ATAC clustering labels
+- Evaluating outputs: GAS| Joint embeddings | RNA, and ATAC clustering labels
 
 ___________________________________________________________________________________________________________________________________________________________________________
 
