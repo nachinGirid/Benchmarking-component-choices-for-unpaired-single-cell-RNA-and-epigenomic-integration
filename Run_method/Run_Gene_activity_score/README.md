@@ -60,7 +60,7 @@ hg38_promoter_annotation.sort.bed
 or  
 mm10_gene_annotation.sort.bed  
 mm10_promoter_annotation.sort.bed    
-#### Bash: sort/filter fragments and run bedmap
+#### Part 1: bash- sort/filter fragments and run bedmap
 ```bash
 atac_fragments.tsv.gz
 
@@ -87,7 +87,7 @@ GENE_OUT="atac_genes_bc.bed"
 bedmap --ec --delim '\t' --echo --echo-map-id "$PROMS" "$FILTERED" > "$PROM_OUT"
 bedmap --ec --delim '\t' --echo --echo-map-id "$GENES" "$FILTERED" > "$GENE_OUT"
 ```
-#### R: build GAS sparse matrix from bedmap outputs  
+#### Part 2: R- build GAS sparse matrix from bedmap outputs  
 ```r
 rna_mat <- reaRDS("rna_raw_dgCMatrix.rds")
 genes_bed <- file.path("atac_genes_bc.bed")
