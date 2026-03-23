@@ -1,4 +1,4 @@
-# Three-step benchmarking scRNA and Epigenomic Data integration methods
+# Benchmarking-component-choices-for-unpaired-single-cell-RNA-and-epigenomic-integration
 ___________________________________________________________________________________________________________________________________________________________________________
 ## Overview
 ### Benchmarking is done in 3 steps
